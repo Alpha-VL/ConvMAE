@@ -16,6 +16,14 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 > **Semantic Segmentation**:
 
 ## Introduction
+ConvMAE framework demonstrates that multi-scale hybrid convolution-transformer can learn more discriminative representations via the mask auto-encoding scheme. 
+* We present the strong and efficient self-supervised framework ConvMAE, which is easy to implement but show outstanding performances on downstream tasks.
+* ConvMAE naturally generates hierarchical representations and exhibit promising performances on object detection and segmentation.
+* ConvMAE-Base improves the ImageNet finetuning accuracy by 1.3% compared with MAE-Base.
+On object detection with Mask-RCNN, ConvMAE-Base achieves 52.5 $AP^{\rm box}$ and 46.5 $AP^{\rm mask}$ with a 25-epoch training schedule while MAE-Base attains 50.3 $AP^{\rm box}$ and 44.9 $AP^{\rm mask}$ with 100 training epochs. On ADE20K with UperNet, ConvMAE-Base surpasses MAE-Base by 2.6 mIoU (48.1 vs. 50.7).
+
+![tenser](figures/ConvMAE.png)
+
 
 ## Main Results on ImageNet-1K
 
