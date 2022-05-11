@@ -68,7 +68,7 @@ Download the finetuned model from [here](https://drive.google.com/file/d/19F6vQU
 Evaluate ConvViT-Base by running:
 
 ```bash
-python -m torch.distributed.launch --nproc_per_node=8 main_finetune.py --batch_size 128 --model convvit_base_patch16 --resume ${FINETUNE_CHKPT} --dist_eval --data_path ${IMAGENET_DIR} 
+python -m torch.distributed.launch --nproc_per_node=8 main_finetune.py --batch_size 128 --model convvit_base_patch16 --resume ${FINETUNE_CHKPT} --dist_eval --data_path ${IMAGENET_DIR} --eval
 ``` 
 
 This shoud give:

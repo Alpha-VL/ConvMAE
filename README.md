@@ -81,7 +81,7 @@ The following table provides pretrained checkpoints and logs used in the paper.
 * CUDA 10.2+
 * GCC 5+
 
-### Training and inference
+### Training and evaluation
 * See [PRETRAIN.md](PRETRAIN.md) for pretraining.
 * See [FINETUNE.md](FINETUNE.md) for pretrained model finetuning and linear probing. 
 * See [DETECTION.md](DET/DETECTION.md) for using pretrained backbone on [Mask RCNN](https://openaccess.thecvf.com/content_iccv_2017/html/He_Mask_R-CNN_ICCV_2017_paper.html).
