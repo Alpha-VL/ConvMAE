@@ -79,7 +79,7 @@ Accuracy of the network on the 50000 test images: 85.0%
 ```
 
 ### Fine-tuning
-Download the pretrained model from [here](https://drive.google.com/file/d/1Je9ClIGCQP43xC3YURVFPnaMRC0-ax1h/view?usp=sharing).
+Download the pretrained model from [here](https://drive.google.com/file/d/1AEPivXw0A0b_m5EwEi6fg2pOAoDr8C31/view?usp=sharing).
 
 To finetune with multi-node distributed training, run the following on 4 nodes with 8 GPUs each:
 ```bash
@@ -106,5 +106,12 @@ python -m torch.distributed.launch --nproc_per_node=8 main_finetune.py \
     --weight_decay 0.05 --drop_path 0.1 --mixup 0.8 --cutmix 1.0 --reprob 0.25 \
     --dist_eval --data_path ${IMAGENET_DIR}
 ```
+#### Notes
+- There are chances that loss is nan during finetuning process, if so, just delete the [line](https://github.com/Alpha-VL/ConvMAE/blob/53d56ad2388665bf86e0e029aa3f424e709a6652/engine_finetune.py#L55) to use fp32 type to resume the finetuning from where it broke down.
+- How to resume: just add `--resume` into above scripts as:
+```bash
+--resume ${CHKPT_RESUME}
+```
+- Also, we are still working to solve the possible gradient vanish caused by fp16 mixed-precision finetuning. Feel free to contact us if you have any suggestions.
 
-### Linear Probing
+

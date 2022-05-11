@@ -1,3 +1,4 @@
+# Copyright (c) 2022 Alpha-VL
 # --------------------------------------------------------
 # References:
 # timm: https://github.com/rwightman/pytorch-image-models/tree/master/timm

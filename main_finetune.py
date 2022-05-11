@@ -1,3 +1,4 @@
+# Copyright (c) 2022 Alpha-VL
 # --------------------------------------------------------
 # References:
 # DeiT: https://github.com/facebookresearch/deit
