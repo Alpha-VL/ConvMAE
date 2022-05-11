@@ -24,16 +24,22 @@ On object detection with Mask-RCNN, ConvMAE-Base achieves 53.2 box AP and 47.1 m
 
 ![tenser](figures/ConvMAE.png)
 
+## Pretrain on ImageNet-1K
+The following table provides pretrained checkpoints and logs used in the paper.
+| | ConvMAE-Base|
+| :---: | :---: |
+| pretrained checkpoints| [download](https://drive.google.com/file/d/1AEPivXw0A0b_m5EwEi6fg2pOAoDr8C31/view?usp=sharing) |
+| logs | [download](https://drive.google.com/file/d/1Je9ClIGCQP43xC3YURVFPnaMRC0-ax1h/view?usp=sharing) |
 
 ## Main Results on ImageNet-1K
-| Models | #Params(M) | Supervision | Encoder Ratio | Pretrain Epochs | FT acc@1(%) | LIN acc@1(%) | logs/weights |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| BEiT | 88 | DALLE | 100% | 300 | 83.0 | 37.6 | - |
-| MAE | 88 | RGB | 25% | 1600 | 83.6 | 67.8 | - |
-| SimMIM | 88 | RGB | 100% | 800 | 84.0 | 56.7 | - |
-| MaskFeat | 88 | HOG | 100% | 300 | 83.6 | N/A | - |
-| data2vec | 88 | RGB | 100% | 800 | 84.2 | N/A | - |
-| ConvMAE-B | 88 | RGB | 25% | 1600 | 85.0 | 70.9 | soon |
+| Models | #Params(M) | Supervision | Encoder Ratio | Pretrain Epochs | FT acc@1(%) | LIN acc@1(%) | FT logs/weights | LIN logs/weights |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| BEiT | 88 | DALLE | 100% | 300 | 83.0 | 37.6 | - | - |
+| MAE | 88 | RGB | 25% | 1600 | 83.6 | 67.8 | - | - |
+| SimMIM | 88 | RGB | 100% | 800 | 84.0 | 56.7 | - | - |
+| MaskFeat | 88 | HOG | 100% | 300 | 83.6 | N/A | - | - |
+| data2vec | 88 | RGB | 100% | 800 | 84.2 | N/A | - | - |
+| ConvMAE-B | 88 | RGB | 25% | 1600 | 85.0 | 70.9 | [log](https://drive.google.com/file/d/1nzAOD5UR3b9QqwD2vMMz0Bx3170sypuy/view?usp=sharing)/[weight](https://drive.google.com/file/d/19F6vQUlITpzNLvXLKi5NRxRLOmKRxqFi/view?usp=sharing) |
 
 
 
