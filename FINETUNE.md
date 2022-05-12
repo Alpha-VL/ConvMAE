@@ -112,6 +112,33 @@ python -m torch.distributed.launch --nproc_per_node=8 main_finetune.py \
 ```bash
 --resume ${CHKPT_RESUME}
 ```
-- Also, we are still working to solve the possible gradient vanish caused by fp16 mixed-precision finetuning. Feel free to contact us if you have any suggestions.
+- Also, we are still working to solve the possible gradient vanish caused by fp16 mixed-precision finetuning. Feeling free to contact us if you have any suggestions.
 
+### Linear Probing
+Download the pretrained model from [here](https://drive.google.com/file/d/1AEPivXw0A0b_m5EwEi6fg2pOAoDr8C31/view?usp=sharing).
+
+To finetune with multi-node distributed training, run the following on 4 nodes with 8 GPUs each:
+```bash
+python submitit_linprobe.py \
+    --job_dir ${JOB_DIR} \
+    --nodes 4 \
+    --batch_size 128 \
+    --model convvit_base_patch16 \
+    --global_pool \
+    --finetune ${PRETRAIN_CHKPT} \
+    --epochs 90 \
+    --blr 0.1 --weight_decay 0.0 \
+    --dist_eval --data_path ${IMAGENET_DIR}
+```
+
+To finetune with single-node training, run the following on single node with 8 GPUs:
+```bash
+python -m torch.distributed.launch --nproc_per_node=8 main_linprobe.py \
+    --batch_size 512 \
+    --model convvit_base_patch16 \
+    --finetune ${PRETRAIN_CHKPT} \
+    --epochs 90 \
+    --blr 0.1 --weight_decay 0.0 \
+    --dist_eval --data_path ${IMAGENET_DIR}
+```
 
