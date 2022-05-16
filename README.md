@@ -27,7 +27,7 @@ The supported codes and models for COCO object detection and instance segmentati
 
 ***08/May/2022***
 
-The preprint version are public at [arxiv](https://arxiv.org/abs/2205.03892).
+The preprint version is public at [arxiv](https://arxiv.org/abs/2205.03892).
 
 ## Introduction
 ConvMAE framework demonstrates that multi-scale hybrid convolution-transformer can learn more discriminative representations via the mask auto-encoding scheme. 
