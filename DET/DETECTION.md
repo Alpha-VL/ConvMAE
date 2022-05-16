@@ -63,8 +63,8 @@ Download the pretrained ConvMAE model [here](https://drive.google.com/file/d/1AE
  
 ```
 # single-machine training
-python lazyconfig_train_net.py --config-file <CONFIG_FILE> --num-gpus <GPU_NUM> model.backbone.bottom_up.pretrained=/path/to/pretrained/weight
+python lazyconfig_train_net.py --config-file <CONFIG_FILE> --num-gpus <GPU_NUM> model.backbone.bottom_up.pretrained=<PRETRAINED_MODEL_PATH>
 
 # multi-machine training
-python lazyconfig_train_net.py --config-file <CONFIG_FILE> --num-gpus <GPU_NUM> --num-machines <MACHINE_NUM> --master_addr <MASTER_ADDR> --master_port <MASTER_PORT> model.backbone.bottom_up.pretrained=/path/to/pretrained/weight
+python lazyconfig_train_net.py --config-file <CONFIG_FILE> --num-gpus <GPU_NUM> --num-machines <MACHINE_NUM> --master_addr <MASTER_ADDR> --master_port <MASTER_PORT> model.backbone.bottom_up.pretrained=<PRETRAINED_MODEL_PATH>
 ```
