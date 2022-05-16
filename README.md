@@ -14,6 +14,21 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md).
 
+## Updates
+
+***16/May/2022***
+
+The supported codes and models for COCO object detection and instance segmentation are available.
+
+***11/May/2022***
+
+1. Pretrained models on ImageNet-1K for ConvMAE.
+2. The supported codes and models for ImageNet-1K finetuning and linear probing are provided.
+
+***08/May/2022***
+
+The preprint version are public at [arxiv](https://arxiv.org/abs/2205.03892).
+
 ## Introduction
 ConvMAE framework demonstrates that multi-scale hybrid convolution-transformer can learn more discriminative representations via the mask auto-encoding scheme. 
 * We present the strong and efficient self-supervised framework ConvMAE, which is easy to implement but show outstanding performances on downstream tasks.
@@ -94,5 +109,14 @@ The pretraining and finetuning of our project are based on [DeiT](https://github
 ConvMAE is released under the [MIT License](https://github.com/Alpha-VL/ConvMAE/blob/main/LICENSE).
 
 ## Citation
+
+```bash
+@article{gao2022convmae,
+  title={ConvMAE: Masked Convolution Meets Masked Autoencoders},
+  author={Gao, Peng and Ma, Teli and Li, Hongsheng and Dai, Jifeng and Qiao, Yu},
+  journal={arXiv preprint arXiv:2205.03892},
+  year={2022}
+}
+```
 
 
