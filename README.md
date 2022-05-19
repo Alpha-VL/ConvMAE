@@ -89,6 +89,31 @@ The following table provides pretrained checkpoints and logs used in the paper.
 | MAE | IN1K | 1600 | 16K | 163 | 0.6 | 48.1 | -  |
 | ConvMAE-B | IN1K | 1600 | 16K | 153 | 0.6 | 51.7 | soon  |
 
+## Main Results on Kinetics-400
+
+|         Models          | Pretrain Epochs |    Finetune Epochs    | #Params(M) | Top1 | Top5 | logs/weights |
+| :---------------------: | :-------------: | :-------------------: | :--------: | :--: | :--: | :----------: |
+|       VideoMAE-B        |       200       |          100          |     87     | 77.8 |      |              |
+|       VideoMAE-B        |       800       |          100          |     87     | 79.4 |      |              |
+|       VideoMAE-B        |      1600       |          100          |     87     | 79.8 |      |              |
+|       VideoMAE-B        |      1600       | 100 (w/ Repeated Aug) |     87     | 80.7 | 94.7 |              |
+| SpatioTemporalLearner-B |       800       | 150 (w/ Repeated Aug) |     87     | 81.3 | 94.9 |              |
+|     VideoConvMAE-B      |       200       |          100          |     86     | 80.1 | 94.3 |     Soon     |
+|     VideoConvMAE-B      |       800       |          100          |     86     | 81.7 | 95.1 |     Soon     |
+|   VideoConvMAE-B-MSD    |       800       |          100          |     86     | 82.7 | 95.5 |     Soon     |
+
+## Main Results on Something-Something V2
+
+|       Models       | Pretrain Epochs | Finetune Epochs | #Params(M) | Top1 | Top5 | logs/weights |
+| :----------------: | :-------------: | :-------------: | :--------: | :--: | :--: | :----------: |
+|     VideoMAE-B     |       200       |       40        |     87     | 66.1 |      |              |
+|     VideoMAE-B     |       800       |       40        |     87     | 69.3 |      |              |
+|     VideoMAE-B     |       2400      |       40        |     87     | 70.3 |      |              |
+|   VideoConvMAE-B   |       200       |       40        |     86     | 67.7 | 91.2 |     Soon     |
+|   VideoConvMAE-B   |       800       |       40        |     86     | 69.9 | 92.4 |     Soon     |
+| VideoConvMAE-B-MSD |       800       |       40        |     86     | 70.7 | 93.0 |     Soon     |
+
+
 ## Getting Started
 ### Prerequisites
 * Linux
