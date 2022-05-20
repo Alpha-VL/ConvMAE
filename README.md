@@ -12,9 +12,14 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 > **ImageNet Pretrain**: See [PRETRAIN.md](PRETRAIN.md).\
 > **ImageNet Finetune**: See [FINETUNE.md](FINETUNE.md).\
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
-> **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md).
+> **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md). \
+> **Video Classification**: See [VIDEO.md](VIDEO/VIDEO.md).
 
 ## Updates
+
+***20/May/2022***
+
+Update results on video classification.
 
 ***16/May/2022***
 
@@ -126,6 +131,7 @@ The following table provides pretrained checkpoints and logs used in the paper.
 * See [FINETUNE.md](FINETUNE.md) for pretrained model finetuning and linear probing. 
 * See [DETECTION.md](DET/DETECTION.md) for using pretrained backbone on [Mask RCNN](https://openaccess.thecvf.com/content_iccv_2017/html/He_Mask_R-CNN_ICCV_2017_paper.html).
 * See [SEGMENTATION.md](SEG/SEGMENTATION.md) for using pretrained backbone on [UperNet](https://openaccess.thecvf.com/content_ECCV_2018/html/Tete_Xiao_Unified_Perceptual_Parsing_ECCV_2018_paper.html).
+* See [VIDEO.md](VIDEO/VIDEO.md) for video classification.
 
 ## Acknowledgement
 The pretraining and finetuning of our project are based on [DeiT](https://github.com/facebookresearch/deit) and [MAE](https://github.com/facebookresearch/mae). The object detection and semantic segmentation parts are based on [MIMDet](https://github.com/hustvl/MIMDet) and [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) respectively. Thanks for their wonderful work.
