@@ -13,7 +13,7 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 > **ImageNet Finetune**: See [FINETUNE.md](FINETUNE.md).\
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md). \
-> **Video Classification**: See [VIDEO.md](VIDEO/VIDEO.md).
+> **Video Classification**: See [VideoConvMAE](https://github.com/Alpha-VL/VideoConvMAE).
 
 ## Updates
 
@@ -67,10 +67,10 @@ The following table provides pretrained checkpoints and logs used in the paper.
 ### Mask R-CNN
 | Models | Pretrain | Pretrain Epochs | Finetune Epochs | #Params(M)| FLOPs(T) | box AP | mask AP | logs/weights |
 | :---: | :---: | :---: |:---: | :---: | :---: | :---: | :---: | :---: |
-| Swin-B | IN21K w/ labels | 300 | 36 | 109 | 0.7 | 51.4 | 45.4 | - | 
-| Swin-L | IN21K w/ labels | 300 | 36 | 218 | 1.1 | 52.4 | 46.2 | - | 
-| MViTv2-B | IN21K w/ labels | 300 | 36 | 73 | 0.6 | 53.1 | 47.4 | - | 
-| MViTv2-L | IN21K w/ labels | 300 | 36 | 239 | 1.3 | 53.6 | 47.5 | - | 
+| Swin-B | IN21K w/ labels | 90 | 36 | 109 | 0.7 | 51.4 | 45.4 | - | 
+| Swin-L | IN21K w/ labels | 90 | 36 | 218 | 1.1 | 52.4 | 46.2 | - | 
+| MViTv2-B | IN21K w/ labels | 90 | 36 | 73 | 0.6 | 53.1 | 47.4 | - | 
+| MViTv2-L | IN21K w/ labels | 90 | 36 | 239 | 1.3 | 53.6 | 47.5 | - | 
 | Benchmarking-ViT-B | IN1K w/o labels | 1600 | 100 | 118 | 0.9 | 50.4 | 44.9 | - |
 | Benchmarking-ViT-L | IN1K w/o labels | 1600 | 100 | 340 | 1.9 | 53.3 | 47.2 | - |
 | ViTDet | IN1K w/o labels | 1600 | 100 | 111 | 0.8 | 51.2 | 45.5 | - |
@@ -131,7 +131,7 @@ The following table provides pretrained checkpoints and logs used in the paper.
 * See [FINETUNE.md](FINETUNE.md) for pretrained model finetuning and linear probing. 
 * See [DETECTION.md](DET/DETECTION.md) for using pretrained backbone on [Mask RCNN](https://openaccess.thecvf.com/content_iccv_2017/html/He_Mask_R-CNN_ICCV_2017_paper.html).
 * See [SEGMENTATION.md](SEG/SEGMENTATION.md) for using pretrained backbone on [UperNet](https://openaccess.thecvf.com/content_ECCV_2018/html/Tete_Xiao_Unified_Perceptual_Parsing_ECCV_2018_paper.html).
-* See [VIDEO.md](VIDEO/VIDEO.md) for video classification.
+* See [VideoConvMAE](https://github.com/Alpha-VL/VideoConvMAE) for video classification.
 
 ## Acknowledgement
 The pretraining and finetuning of our project are based on [DeiT](https://github.com/facebookresearch/deit) and [MAE](https://github.com/facebookresearch/mae). The object detection and semantic segmentation parts are based on [MIMDet](https://github.com/hustvl/MIMDet) and [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) respectively. Thanks for their wonderful work.
