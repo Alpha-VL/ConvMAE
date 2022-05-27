@@ -16,6 +16,10 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 > **Video Classification**: See [VideoConvMAE](https://github.com/Alpha-VL/VideoConvMAE).
 
 ## Updates
+***27/May/2022***
+
+1. The supported codes for ImageNet-1K pretraining.
+2. The supported codes and models for semantci segmentation are provided.
 
 ***20/May/2022***
 
