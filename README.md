@@ -92,7 +92,7 @@ The following table provides pretrained checkpoints and logs used in the paper.
 | PeCo | IN1K | 300 | 16K | 163 | 0.6 | 46.7 | -  |
 | CAE | IN1K+DALLE | 800 | 16K | 163 | 0.6 | 48.8 | -  |
 | MAE | IN1K | 1600 | 16K | 163 | 0.6 | 48.1 | -  |
-| ConvMAE-B | IN1K | 1600 | 16K | 153 | 0.6 | 51.7 | soon  |
+| ConvMAE-B | IN1K | 1600 | 16K | 153 | 0.6 | 51.7 | [log](https://drive.google.com/file/d/1N3LEhEd2FLx8777Kn5tVn5gxYiBTz00A/view?usp=sharing)/[weight](https://drive.google.com/file/d/1aQR_CmZBzN2eHWYgzPUDm4ulme-g9cIR/view?usp=sharing)  |
 
 ## Main Results on Kinetics-400
 
