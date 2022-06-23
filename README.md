@@ -142,6 +142,9 @@ The following table provides pretrained checkpoints and logs used in the paper.
 * See [SEGMENTATION.md](SEG/SEGMENTATION.md) for using pretrained backbone on [UperNet](https://openaccess.thecvf.com/content_ECCV_2018/html/Tete_Xiao_Unified_Perceptual_Parsing_ECCV_2018_paper.html).
 * See [VideoConvMAE](https://github.com/Alpha-VL/VideoConvMAE) for video classification.
 
+## Visualization
+![tenser](figures/feat_map.JPG)
+
 ## Acknowledgement
 The pretraining and finetuning of our project are based on [DeiT](https://github.com/facebookresearch/deit) and [MAE](https://github.com/facebookresearch/mae). The object detection and semantic segmentation parts are based on [MIMDet](https://github.com/hustvl/MIMDet) and [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) respectively. Thanks for their wonderful work.
 
