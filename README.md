@@ -17,6 +17,10 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 
 ## Updates
 
+***21/Aug/2022***
+
+[Official-ConvMAE-Det](https://github.com/OpenGVLab/Official-ConvMAE-Det) which follows official ViTDet codebase is released. 
+
 ***08/Jun/2022***
 
 🚀FastConvMAE🚀: significantly accelerates the pretraining hours (4000 single GPU hours => 200 single GPU hours). The code is going to be released at [FastConvMAE](https://github.com/Alpha-VL/FastConvMAE).
