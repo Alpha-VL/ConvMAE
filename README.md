@@ -17,6 +17,10 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 
 ## Updates
 
+***9/Sep/2022***
+
+ConvMAE-v2 pretrained checkpoints are released.
+
 ***21/Aug/2022***
 
 [Official-ConvMAE-Det](https://github.com/OpenGVLab/Official-ConvMAE-Det) which follows official ViTDet codebase is released. 
@@ -63,6 +67,14 @@ The following table provides pretrained checkpoints and logs used in the paper.
 | :---: | :---: |
 | pretrained checkpoints| [download](https://drive.google.com/file/d/1AEPivXw0A0b_m5EwEi6fg2pOAoDr8C31/view?usp=sharing) |
 | logs | [download](https://drive.google.com/file/d/1Je9ClIGCQP43xC3YURVFPnaMRC0-ax1h/view?usp=sharing) |
+
+The following results are for ConvMAE-v2 (pretrained for 200 epochs on ImageNet-1k).
+| model | pretrained checkpoints | ft. acc. on ImageNet-1k |
+| :---: | :---: | :---: |
+| ConvMAE-v2-Small | [download](https://drive.google.com/file/d/1LqU-0tajhxYMSTN6WVFwiIveFjETVvKb/view?usp=sharing) | 83.6 |
+| ConvMAE-v2-Base  | [download](https://drive.google.com/file/d/1bcbysMa2F7FBfvo56WnWTxDlSKtsbs8V/view?usp=sharing) | 85.7 |
+| ConvMAE-v2-Large | [download](https://drive.google.com/file/d/1TZFXJE9Z-VDkLq6QceSfzfOBU-51XhVN/view?usp=sharing) | 86.8 |
+| ConvMAE-v2-Huge  | [download](https://drive.google.com/file/d/1fzJprhGaBIUxsxprgLhzpnyAz-jkKjIk/view?usp=sharing) | 88.0 |
 
 ## Main Results on ImageNet-1K
 | Models | #Params(M) | Supervision | Encoder Ratio | Pretrain Epochs | FT acc@1(%) | LIN acc@1(%) | FT logs/weights | LIN logs/weights |
