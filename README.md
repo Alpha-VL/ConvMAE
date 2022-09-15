@@ -17,6 +17,10 @@ This repo is the official implementation of [ConvMAE: Masked Convolution Meets M
 
 ## Updates
 
+***15/Sep/2022***
+
+Paper accepted at NeurIPS 2022.
+
 ***9/Sep/2022***
 
 ConvMAE-v2 pretrained checkpoints are released.
