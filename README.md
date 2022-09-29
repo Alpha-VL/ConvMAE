@@ -77,9 +77,9 @@ The following results are for ConvMAE-v2 (pretrained for 200 epochs on ImageNet-
 | model | pretrained checkpoints | ft. acc. on ImageNet-1k |
 | :---: | :---: | :---: |
 | ConvMAE-v2-Small | [download](https://drive.google.com/file/d/1LqU-0tajhxYMSTN6WVFwiIveFjETVvKb/view?usp=sharing) | 83.6 |
-| ConvMAE-v2-Base  | [download](https://drive.google.com/file/d/1bcbysMa2F7FBfvo56WnWTxDlSKtsbs8V/view?usp=sharing) | 85.7 |
-| ConvMAE-v2-Large | [download](https://drive.google.com/file/d/1TZFXJE9Z-VDkLq6QceSfzfOBU-51XhVN/view?usp=sharing) | 86.8 |
-| ConvMAE-v2-Huge  | [download](https://drive.google.com/file/d/1fzJprhGaBIUxsxprgLhzpnyAz-jkKjIk/view?usp=sharing) | 88.0 |
+| ConvMAE-v2-Base  | [download](https://drive.google.com/file/d/1gykVKNDlRn8eiuXk5bUj1PbSnHXFzLnI/view?usp=sharing) | 85.7 |
+| ConvMAE-v2-Large | [download](https://drive.google.com/file/d/1RN3ZseDseWGwuUwrVTkel17_iYFvZL6m/view?usp=sharing) | 86.8 |
+| ConvMAE-v2-Huge  | [download](https://drive.google.com/file/d/1k1OBhNTLzRI9c6ReSgK7_7vqGZr-2Cpd/view?usp=sharing) | 88.0 |
 
 ## Main Results on ImageNet-1K
 | Models | #Params(M) | Supervision | Encoder Ratio | Pretrain Epochs | FT acc@1(%) | LIN acc@1(%) | FT logs/weights | LIN logs/weights |
