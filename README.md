@@ -18,6 +18,10 @@ This repo is the official implementation of [MCMAE: Masked Convolution Meets Mas
 
 ## Updates
 
+***14/Mar/2023***
+
+MR-MCMAE (a.k.a. ConvMAE-v2) paper released: [Mimic before Reconstruct: Enhancing Masked Autoencoders with Feature Mimicking](https://arxiv.org/abs/2303.05475).
+
 ***15/Sep/2022***
 
 Paper accepted at NeurIPS 2022.
